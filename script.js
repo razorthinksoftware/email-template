@@ -20,8 +20,8 @@ function getTinyURL(url, cb) {
 	    xhr.status === 200 ? cb(xhr.responseText) : console.error('error')
 	  }
 	}
-	xhr.open('GET', '/.netlify/functions/tinifyURL');
-	xhr.send();
+	xhr.open('POST', '/.netlify/functions/tinifyURL');
+	xhr.send(JSON.stringify({ url: url}));
 }
 
 function submitaction(e) {
@@ -59,8 +59,9 @@ function submitaction(e) {
 	});
 
 	if(newfields[3].value) {
+		// SKYPE ID
 		getTinyURL(newfields[3].value, function(skypeTinyUrl) {
-			// document.getElementById("email-skype-href").href = skypeTinyUrl ;
+			document.getElementById("email-skype-href").href = skypeTinyUrl ;
 			console.log('TINIFIED', skypeTinyUrl);
 		});
 	}
