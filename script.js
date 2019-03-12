@@ -61,7 +61,7 @@ function submitaction(e) {
 	if(newfields[3].value) {
 		// SKYPE ID
 		getTinyURL(newfields[3].value, function(skypeTinyUrl) {
-			document.getElementById("email-skype-href").href = skypeTinyUrl ;
+			// document.getElementById("email-skype-href").href = skypeTinyUrl ;
 			console.log('TINIFIED', skypeTinyUrl);
 		});
 	}
