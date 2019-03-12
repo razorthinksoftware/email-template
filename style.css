@@ -1,0 +1,160 @@
+body {
+	margin:  0;
+	padding: 0;
+	background: url('./assets/lg.jpg');
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box {
+    display: inline-block;
+    background: #ffffffd9;
+    padding: 0 20px 30px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px #043c49;
+}
+
+.box > h1 {
+	color: rgba(0, 0, 0, .8);
+}
+
+.box-content {
+    display: flex;
+}
+
+.field label {
+    width: 100px;	
+    display: inline-block;
+    font-size: 14px;
+}
+
+.field label.required::after {
+	content: "*";
+	color: #F44336;
+    margin-left: 1px;
+}
+
+.field input {
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 2px;
+    border: 1px solid #80808047;
+    width: 200px;
+    background: rgba(255, 255, 255, .7);
+}
+
+.field {
+    margin-bottom: 6px;
+}
+
+.form {
+    padding-right: 15px;
+}
+
+input.type {
+    width: 75px;
+}
+
+input.code {
+    width: 50px;
+}
+
+.submit-btn {
+    border: 2px solid #ff4933;
+    color: #ff4933;
+    font-weight: 600;
+    padding: 7px 14px;
+    margin-top: 14px;
+    background: transparent;
+    font-family: 'Open sans';
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: .18s ease-in all;
+}
+
+.submit-btn:hover {
+	color: #fff;
+	background: #ff4933;
+}	
+
+.template {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	margin-left: 25px;
+    padding-left: 25px;
+    width: 613px;
+    transition: 0.15s ease-in width;
+    overflow: hidden;
+}
+
+.template.hide {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    margin: 0;
+}
+
+.template-head {
+    width: 612px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, .7);
+    line-height: 21px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.template-content {
+    background: rgba(255, 255, 255, .7);
+    border-radius: 3px;
+    margin-top: 16px;
+    padding: 0 16px 16px;
+}
+
+.copy-btn {
+    border: 2px solid #0089aa;
+    padding: 6px 8px;
+    background: #0089aa;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    float: right;
+    border-radius: 3px;
+    flex: 0 0 auto;
+}
+
+.copy-btn:active {
+    transform: scale(.93);
+}
+
+.phone-no-grp__field {
+    margin-right: 10px;
+}
+
+.phone-no-grp__field > span {
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.phone-no-grp {
+    display: flex;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #00000017;
+    margin-bottom: 25px;
+}
+
+.form-fields_wrapper {
+    /* max-height: 52vh;
+    overflow: auto; */
+}

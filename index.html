@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>RZT Email Signature Generator</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" />
+	<script src="./clipboard.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="./script.js" type="text/javascript" charset="utf-8" async defer></script>
+
+  </style>"
+</head>
+<body>
+	<div class="wrapper">
+		<div class="box">
+			<h1>RZT Email Signature Generator</h1>
+			<div class="box-content">
+				<div class="form">
+					<div class="form-fields_wrapper">
+						<div class="field">
+							<label class="required">Name</label>
+							<input type="text" placeholder="John Doe" id="form-name"/>
+						</div>
+						<div class="field">
+							<label class="required">Designation</label>
+							<input type="text" placeholder="Project Manager" id="form-desig"/>
+						</div>
+						<div class="field">
+							<label class="required">Email ID</label>
+							<input type="text" placeholder="johndoe@gmail.com" id="form-email"/>
+						</div>
+						<div class="field">
+							<label class="required">Skype ID</label>
+							<input type="text" placeholder="john.doe" id="form-skype"/>
+						</div>
+						<div class="field" style="margin-top: 15px;">
+							<label class="required">Phone no #1 </label>
+							<div class="phone-no-grp">
+								<div class="phone-no-grp__field">
+									<span>Tag</span><br>
+									<input type="text" class="type" placeholder="USA" id="form-type-1"/>
+								</div>
+								<div class="phone-no-grp__field">
+									<span>Code</span><br>
+									<input type="text" class="code" placeholder="+1" id="form-code-1"/>
+								</div>
+								<div class="phone-no-grp__field">
+									<span>Number</span><br>
+									<input type="text" placeholder="999999999" id="form-phone-1"/>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label>Phone no #2 </label>
+							<div class="phone-no-grp">
+								<div class="phone-no-grp__field">
+									<span>Tag</span><br>
+									<input type="text" class="type" placeholder="India" id="form-type-2"/>
+								</div>
+								<div class="phone-no-grp__field">
+									<span>Code</span><br>
+									<input type="text" class="code" placeholder="+91" id="form-code-2"/>
+								</div>
+								<div class="phone-no-grp__field">
+									<span>Number</span><br>
+									<input type="text" placeholder="999999999" id="form-phone-2"/>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label>Phone no #3 </label>
+							<div class="phone-no-grp">
+								<div class="phone-no-grp__field">
+									<span>Tag</span><br>
+									<input type="text" class="type" placeholder="India" id="form-type-3"/>
+								</div>
+								<div class="phone-no-grp__field">
+									<span>Code</span><br>
+									<input type="text" class="code" placeholder="+91" id="form-code-3"/>
+								</div>
+								<div class="phone-no-grp__field">
+									<span>Number</span><br>
+									<input type="text" placeholder="999999999" id="form-phone-3"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<button type="button" class="submit-btn" id="submitBtn">GENERATE</button>
+					</div>
+				</div>
+				<div class="template hide" id="template">
+					<div class="template-head">
+						Hit "Copy to Clipboard" button to copy the email signature template below and paste it in your email-client signature field.
+						<button id="copy-btn" class="copy-btn" data-clipboard-action="copy" data-clipboard-target="#template-content">COPY TO CLIPBOARD</button>
+					</div>
+					<div id="template-content" class="template-content">
+						<!-- TEMPLATE STARTS HERE -->
+
+<div style="width: 580px; max-width: 100%">
+   <br>
+   <br>
+   <table cellpadding="0" cellspacing="0" style="width: 100%;font-family:arial,sans-serif;border-top:1px solid rgba(41, 41, 41, .2);width:100%;padding-left:0px;padding-bottom: 3px;border-bottom: 1px solid rgba(41, 41, 41, .2);padding-left: 15px;">
+      <tbody>
+         <tr>
+            <td>
+               <br>
+               <table cellpadding="0" cellspacing="0" style="width:100%;height:80px;padding-right:20px;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <table cellpadding="0" cellspacing="0" style="font-family:arial,sans-serif;padding-bottom:0px;width:100%;">
+                              <tbody>
+                                 <tr>
+                                    <td style="height: 43px; width: 6px;background-color: #D12F2F;"></td>
+                                    <td style="padding-left: 12px;">
+                                       <div id="email-name" style="color: #292929;	font-family: Arial, sans-serif;font-size: 18px;letter-spacing: 1px;	line-height: 21px; padding-bottom: 5px;">
+                                          <!-- EDIT : ADD NAME HERE -->
+                                          John Doe
+                                       </div>
+                                       <div id="email-desig" style="color: #696767; font-family: Arial; font-size: 14px; letter-spacing: 1px; line-height: 16px;">
+                                          <!-- EDIT : ADD DESIGNATION HERE -->
+                                          Project Manager
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <table style="font-family:arial,sans-serif;padding-bottom:0px;width:100%;padding-top:12px;padding-left: 15px;min-width: 240px;">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <a href="mailto:terrence@razorthink.com" style="text-decoration: none;color: #fff;font-family: Arial, sans-serif;font-size: 14px;line-height: 16px; display: inline-block" target="_blank">
+                                          <img alt="" style="height: 20px; width: 20px; float: left;padding-right: 5px;" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/mail.png">
+                                          <span id="email-email" style="text-decoration: none;color: #7f7f7f;font-family: Arial, sans-serif;font-size: 14px;line-height: 16px;">
+                                             <!-- EDIT : ADD EMAIL ID HERE -->
+                                             terrence@razorthink.com
+                                          </span>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="padding-top: 2px;vertical-align: middle;">
+                                       <span style="padding-right: 10px;float: left;padding-bottom: 5px;">
+                                          <a id="email-skype-href" href="skype:terrence.robert?chat" style="text-decoration:none;color: #7f7f7f;font-family: Arial;font-size: 14px;line-height: 16px;float: left;padding-right: 10px;padding-top: 2px;display: inline-block;" target="_blank">
+                                             <img alt="" style="height: 20px;width: 20px;padding-right: 5px;float: left;margin-top: -2px;" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/skype.png">
+                                             <span id="email-skype" style="
+                                                text-decoration: none;
+                                                color: #7f7f7f;
+                                                font-family: Arial, sans-serif;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                ">
+                                                <!-- EDIT : ADD SKYPE ID HERE -->
+                                                terrence.robert
+                                             </span>
+                                          </a>
+                                       </span>
+                                       <span id="email-phone-wrapper">
+                                       <span style="
+                                          float: left;
+                                          padding-bottom: 5px;
+                                          ">
+                                          <a href="tel:(809)%20598-7679" style="text-decoration:none;color: #fff;font-family: Arial;font-size: 14px;line-height: 16px;float: left;padding-top: 2px;padding-right: 10px;  display: inline-block" value="+918095987679" target="_blank">
+                                             <img alt="" style="height: 20px;width: 20px;float: left;padding-right: 5px;margin-top: -2px;" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/call.png">
+                                             <span>India: </span>
+                                             <span style="
+                                                text-decoration: none;
+                                                color: #7f7f7f;
+                                                font-family: Arial, sans-serif;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                ">
+                                             <!-- EDIT : ADD PERSONAL CONTACT NO #1 ID HERE -->
+                                             +91 8095987679
+                                         	</span>
+                                          </a>
+                                       </span>
+                                       <span style="
+                                          float: left;
+                                          padding-bottom: 5px;
+                                          ">
+                                          <a href="tel:(809)%20598-7679" style="text-decoration:none;color: #fff;font-family: Arial;font-size: 14px;line-height: 16px;float: left;padding-top: 2px; display: inline-block" value="+18095987679" target="_blank">
+                                             <img alt="" style="height: 20px;width: 20px;float: left;padding-right: 5px;margin-top: -2px;" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/call.png">
+                                             <span style="
+                                                text-decoration: none;
+                                                color: #7f7f7f;
+                                                font-family: Arial, sans-serif;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                ">
+                                                USA: 
+                                                <!-- EDIT : ADD PERSONAL CONTACT NO #2 ID HERE -->
+                                                +1 809-598-7679
+                                             </span>
+                                          </a>
+                                       </span>
+                                       </span>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <table cellpadding="0" cellspacing="0" style="width: 100%;font-family:arial,sans-serif;width:100%;border-bottom:3px solid rgb(206,50,53);padding-top: 8px;padding-bottom: 2px;">
+      <tbody>
+         <tr>
+            <td>
+               <table cellpadding="0" cellspacing="0" style="width:30%;min-width: 208px;float:left;height:80px;text-align: center;">
+                  <tbody>
+                     <tr>
+                        <td style="padding:0px;vertical-align: middle; padding-left: 30px;">
+                           <a href="http://www.razorthink.com" style="/* float:left */" target="_blank">
+                           	<img src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/RZTlogo.png" style="width: 175px;    padding-bottom: 12px;">
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" borderspacing="2" style="width:50%;min-width: 242px;float:left;height:80px;text-align: center;">
+                  <tbody>
+                     <tr>
+                        <td style="line-height: 0;">
+                           <a href="tel:08026760510" style="text-decoration:none;width: 180px;display: inline-block;" value="+918065691490" target="_blank">
+                              <img alt="" style="height: 20px; width: 20px; float: left;" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/call.png">
+                              <span style="color: #7f7f7f; font-family: Arial; font-size: 14px;	line-height: 16px; float: left; padding-left: 5px; padding-top: 2px; padding-right: 10px;">
+                                 <!-- EDIT : ADD OFFICE CONTACT NO #1 ID HERE -->
+                                 080 26760510
+                              </span>
+                           </a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="padding-top: 3px; line-height: 0;">
+                           <a href="https://www.razorthink.com" style="text-decoration:none;width: 180px;display: inline-block;" value="www.razorthink.com" target="_blank">
+                              <img alt="" style="height: 20px; width: 20px; float: left;" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/website.png">
+                              <span style="color: #7f7f7f; font-family: Arial; font-size: 14px;	line-height: 16px; float: left; padding-left: 5px; padding-top: 2px; padding-right: 10px;">
+                                 <!-- EDIT : ADD WEBSITE ADDRESS ID HERE -->
+                                 www.razorthink.com
+                              </span>
+                           </a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="padding-top: 6px;">
+                           <div style="
+                              width: 180px;
+                              display: inline-block;
+                              text-align: left;
+                              "><a href="https://twitter.com/RazorthinkInc" target="_blank"><img alt="" style="height:26px;width:26px" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/twitter.png"></a>
+                              <span>&nbsp;</span>
+                              <a href="https://www.youtube.com/channel/UCrtrNBQkABy_8U8MF2TOPJQ" target="_blank"><img alt="" style="margin-left:2px;height:26px;width:26px" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/youtube.png"></a>
+                              <span>&nbsp;</span>
+                              <a href="https://www.facebook.com/Razorthink.Inc/" target="_blank"><img alt="" style="margin-left:2px;height:26px;width:26px" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/facebook.png"></a>
+                              <span>&nbsp;</span>
+                              <a href="https://www.linkedin.com/company/razorthink/" target="_blank"><img alt="" style="margin-left:2px;height:26px;width:26px" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/linkedin.png"></a>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+						<!-- TEMPLATE ENDS HERE -->
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
