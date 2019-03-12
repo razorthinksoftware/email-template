@@ -20,7 +20,7 @@ function getTinyURL(url, cb) {
 	    xhr.status === 200 ? cb(xhr.responseText) : console.error('error')
 	  }
 	}
-	xhr.open('GET', 'https://tinyurl.com/api-create.php?url=skype:terrence.robert?chat');
+	xhr.open('GET', '/.netlify/functions/tinifyURL');
 	xhr.send();
 }
 
@@ -59,9 +59,10 @@ function submitaction(e) {
 	});
 
 	if(newfields[3].value) {
-		// getTinyURL(newfields[3].value, function(skypeTinyUrl) {
-		// 	document.getElementById("email-skype-href").href = skypeTinyUrl ;
-		// });
+		getTinyURL(newfields[3].value, function(skypeTinyUrl) {
+			// document.getElementById("email-skype-href").href = skypeTinyUrl ;
+			console.log('TINIFIED', skypeTinyUrl);
+		});
 	}
 	
 
