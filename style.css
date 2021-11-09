@@ -78,6 +78,7 @@ input.code {
     letter-spacing: 1px;
     font-size: 12px;
     transition: .18s ease-in all;
+    cursor: pointer;
 }
 
 .submit-btn:hover {
@@ -129,6 +130,7 @@ input.code {
     float: right;
     border-radius: 3px;
     flex: 0 0 auto;
+    cursor: pointer;
 }
 
 .copy-btn:active {
@@ -152,11 +154,6 @@ input.code {
     padding-top: 5px;
     border-top: 1px solid #00000017;
     margin-bottom: 25px;
-}
-
-.form-fields_wrapper {
-    /* max-height: 52vh;
-    overflow: auto; */
 }
 
 .tagline {
