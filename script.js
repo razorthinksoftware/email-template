@@ -5,7 +5,7 @@ function generatePhoneField (type, code, no) {
 	const fullNumber = code + no;
 	const snippet = `<span style="float: left; padding-bottom: 5px;"> ` +
       `<a href="tel:${fullNumber}" style="float: left;padding-top: 2px;padding-right: 10px; text-decoration:none; display: inline-block; color: #fff" value="${fullNumber}" target="_blank">` +
-         `<img alt="" style="height: 20px;width: 20px;float: left;padding-right: 5px;margin-top: -2px;" src="https://cdn2.hubspot.net/hubfs/2424313/RZTEmailSignaturev2Assets/call.png">` +
+         `<img alt="Phone" style="height: 20px;width: 20px;float: left;padding-right: 5px;margin-top: -2px;" src="./assets/phone.svg">` +
          `${ type ? "<span style='text-decoration: none;color: #7f7f7f;font-family: Arial, sans-serif;font-size: 14px;line-height: 16px;'>" + type + ": </span>" : ''}` +
          `<span style="text-decoration: none;color: #7f7f7f;font-family: Arial, sans-serif;font-size: 14px;line-height: 16px;">${code} ${no}</span>` +
       `</a>` +
@@ -72,17 +72,29 @@ function submitaction(e) {
 	
 
 	let snippet = "";
-	[1,2,3].forEach(index => {
+	[1,2].forEach(index => {
 		if( document.getElementById(`form-phone-${index}`).value){
 			snippet += generatePhoneField(
-				document.getElementById(`form-type-${index}`).value || "",
-				document.getElementById(`form-code-${index}`).value || "",
+				document.getElementById(`form-type-${index}`).value || (index === 1 ? "USA" : "India"),
+				document.getElementById(`form-code-${index}`).value || (index === 1 ? "+1" : "+91"),
 				document.getElementById(`form-phone-${index}`).value || "9999999999"
 			);
 		}
 	});
 
 	phoneNumberWrapper.innerHTML = snippet;
+
+	let officeNo= "";
+	if( document.getElementById(`form-phone-3`).value){
+		officeNo += generatePhoneField(
+			document.getElementById('form-type-3').value,
+			document.getElementById('form-code-3').value,
+			document.getElementById('form-phone-3').value
+		);
+	}
+
+	const officeNumberWrapper = document.getElementById("office-phone-wrapper");
+	officeNumberWrapper.innerHTML = officeNo;
 
 	document.getElementById("template").classList.remove("hide");
 }

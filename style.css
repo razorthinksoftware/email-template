@@ -158,3 +158,11 @@ input.code {
     /* max-height: 52vh;
     overflow: auto; */
 }
+
+.tagline {
+    color: #292929;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    opacity: 0.8;
+}
