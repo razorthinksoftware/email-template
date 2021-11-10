@@ -167,3 +167,14 @@ input.code {
 .social-link {
     text-decoration: none;
 }
+
+.namecontainer {
+    width: 95%;
+}
+
+@media (max-width: 600px) {
+    .namecontainer {
+        width: 100%;
+        min-width:500px;
+    }
+}
