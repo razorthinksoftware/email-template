@@ -3,7 +3,7 @@
 function generatePhoneField (type, code, no) {
 	const phoneHref = "(" + no.slice(0,3) + ")%20" + no.slice(3,6) + "-" + no.slice(6,no.length);
 	const fullNumber = code + no;
-	const snippet = `<span style="float: left; padding-bottom: 5px;"> ` +
+	const snippet = `<span style="float: left; padding-top: 3px;"> ` +
       `<a href="tel:${fullNumber}" style="float: left;padding-top: 2px;padding-right: 10px; text-decoration:none; display: inline-block; color: #fff" value="${fullNumber}" target="_blank">` +
          `<img alt="Phone" style="height: 20px;width: 20px;float: left;padding-right: 5px;margin-top: -2px;" src="https://razorthink.com/img/signature-template-images/phone.png">` +
          `${ type ? "<span style='text-decoration: none;color: #7f7f7f;font-family: Arial, sans-serif;font-size: 14px;line-height: 16px;'>" + type + ": </span>" : ''}` +
